@@ -7,5 +7,6 @@ requires-python = ">=3.14"
 dependencies = [
     "gunicorn>=26.0.0",
     "httpx>=0.28.1",
+    "legacy-cgi>=2.6.4",
     "requests>=2.33.1",
 ]

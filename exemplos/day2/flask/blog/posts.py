@@ -1,10 +1,11 @@
 from blog.database import mongo
+import pymongo
 from datetime import datetime
 
 
 def get_all_posts(published: bool = True) -> list[dict|None]:
     posts = mongo.db.posts.find({"published": published})
-    return list(posts.sort("date"))
+    return list(posts.sort("date", pymongo.DESCENDING))
 
 
 def get_post_by_slug(slug: str) -> dict:

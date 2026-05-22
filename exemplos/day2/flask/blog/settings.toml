@@ -7,4 +7,6 @@ extensions = [
     "flask_bootstrap:Bootstrap",
     "blog.views:configure",
     "blog.plugins:configure",
+    "blog.auth:configure"
 ]
+secret_key = "4d0a3413ef3db844910cba74bddd41c596b3a597116c1e8bc16e5ec19bb49dac"

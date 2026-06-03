@@ -1,0 +1,27 @@
+[project]
+name = "django-blog"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "django>=6.0.5",
+    "django-extensions>=4.1",
+    "django-markdownify>=0.9.7",
+    "ipython>=9.13.0",
+]
+
+[dependency-groups]
+dev = [
+    "black>=26.3.1",
+]
+
+#[project.scripts]
+#blog = "django_blog.app:create_app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["./django_blog"]

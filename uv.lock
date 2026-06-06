@@ -189,6 +189,7 @@ dependencies = [
     { name = "django" },
     { name = "django-extensions" },
     { name = "django-markdownify" },
+    { name = "dynaconf" },
     { name = "ipython" },
 ]
 
@@ -202,6 +203,7 @@ requires-dist = [
     { name = "django", specifier = ">=6.0.5" },
     { name = "django-extensions", specifier = ">=4.1" },
     { name = "django-markdownify", specifier = ">=0.9.7" },
+    { name = "dynaconf", specifier = ">=3.2.13" },
     { name = "ipython", specifier = ">=9.13.0" },
 ]
 

@@ -8,6 +8,7 @@ dependencies = [
     "django>=6.0.5",
     "django-extensions>=4.1",
     "django-markdownify>=0.9.7",
+    "dynaconf>=3.2.13",
     "ipython>=9.13.0",
 ]
 

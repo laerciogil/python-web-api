@@ -19,5 +19,6 @@ django-blog = {workspace = true}
 
 [dependency-groups]
 dev = [
+    "ansible>=14.0.0",
     "flask-shell-ipython>=0.5.3",
 ]

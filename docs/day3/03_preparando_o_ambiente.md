@@ -43,6 +43,12 @@ ssh osboxes@192.168.1.100
 
 Se tiver configurado a chave SSH não irá precisar de user e senha, caso contrário forneça a senha do usuário.
 
+> ### Troubleshooting Connection Errors
+> If you run into issues, verify the following common points:
+> - Host Key Checking: If you have never manually connected to the droplet over SSH, Ansible might fail due to the fingerprint check. You can temporarily bypass this by running `export ANSIBLE_HOST_KEY_CHECKING=False` in your terminal before running the playbook.
+> - Firewall Blocks: Check your DigitalOcean Cloud Firewall dashboard to ensure incoming traffic on port 22 is explicitly permitted from your local IP address.
+> - Key Passphrases: If your SSH key requires a passphrase, start an SSH agent using `eval $(ssh-agent)` and add your key using `ssh-add ~/.ssh/id_ed25519` before launching Ansible.
+
 ## 1. Instalando os softwares requeridos
 
 Vamos usar o gerenciador de pacotes do Ubuntu para garantir que todos os pacotes estão instalados.

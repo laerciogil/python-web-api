@@ -9,7 +9,9 @@ dependencies = [
     "django-extensions>=4.1",
     "django-markdownify>=0.9.7",
     "dynaconf>=3.2.13",
+    "gunicorn>=26.0.0",
     "ipython>=9.13.0",
+    "psycopg2-binary>=2.9.12",
 ]
 
 [dependency-groups]
